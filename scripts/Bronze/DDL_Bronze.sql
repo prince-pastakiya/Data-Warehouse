@@ -40,11 +40,11 @@ CREATE TABLE Bronze.crm_prd_info (
 );
 GO
 
-IF OBJECT_ID ('Bronze.crm_sales_details', 'U') IS NOT NULL
-    DROP TABLE Bronze.crm_sales_details;
+IF OBJECT_ID ('Bronze.crm_sales_info', 'U') IS NOT NULL
+    DROP TABLE Bronze.crm_sales_info;
 GO
   
-CREATE TABLE Bronze.crm_sales_details (
+CREATE TABLE Bronze.crm_sales_info (
     sls_ord_num  NVARCHAR(50),
     sls_prd_key  NVARCHAR(50),
     sls_cust_id  INT,
